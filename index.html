@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Film List</title>
+  <style>
+    body {
+      background-color: black;
+    }
+    .box {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+    }
+    input{
+      width: 200px;
+      height: 25px;
+    }
+    h1 {
+      color: white;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+    .film-card {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin: 10px;
+      width: 200px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      vertical-align: top;
+      color: white;
+    }
+
+    .film-img {
+      width: 100%;
+    }
+
+    .film-info {
+      padding: 10px;
+    }
+
+    #film-list {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    button {
+      width: 100px;
+      height: 30px;
+      border: 1px solid white;
+      background-color: green;
+      color: white;
+    }
+    button:hover {
+      background-color: blue;
+      color: red;
+    }
+  </style>
+</head>
+
+<body>
+<div class="box">
+  <h1 class="heding">Film List</h1>
+  <div>
+  <input type="text" id="search-input" placeholder="Search film" />
+  <button id="search-button">Search</button>
+</div>
+</div>
+  <div id="film-list"></div>
+
+  <script src="films.js"></script>
+  <script src="main.js"></script>
+  <script src="tasks.js"></script>
+</body>
+</html>
